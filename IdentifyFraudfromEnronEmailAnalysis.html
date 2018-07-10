@@ -11784,7 +11784,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[79]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
@@ -11795,6 +11795,7 @@ div#notebook {
 <span class="kn">from</span> <span class="nn">tester</span> <span class="kn">import</span> <span class="n">dump_classifier_and_data</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
 
 <span class="c1">### Task 1: Select what features you&#39;ll use.</span>
 <span class="c1">### features_list is a list of strings, each of which is a feature name.</span>
@@ -11898,7 +11899,7 @@ find outliers is by visualization.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[80]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">featureFormat</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">features_list</span><span class="p">)</span>
@@ -12058,7 +12059,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[81]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span> 
@@ -12101,7 +12102,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># for each employee, print the number of features with the value of NaN if it is unusually high. Total number of features is 20.</span>
@@ -12145,7 +12146,7 @@ GRAMM WENDY L 18
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;WHALEY DAVID A&#39;</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">[</span><span class="s1">&#39;WHALEY DAVID A&#39;</span><span class="p">]</span>
@@ -12193,7 +12194,7 @@ GRAMM WENDY L {&#39;salary&#39;: 0, &#39;to_messages&#39;: 0, &#39;deferral_paym
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1">#remove the outliers</span>
@@ -12212,7 +12213,7 @@ GRAMM WENDY L {&#39;salary&#39;: 0, &#39;to_messages&#39;: 0, &#39;deferral_paym
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[14]:</div>
+<div class="prompt output_prompt">Out[84]:</div>
 
 
 
@@ -12249,7 +12250,7 @@ GRAMM WENDY L {&#39;salary&#39;: 0, &#39;to_messages&#39;: 0, &#39;deferral_paym
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">featureFormat</span><span class="p">(</span><span class="n">data_dict</span><span class="p">,</span> <span class="n">features_list</span><span class="p">)</span>
@@ -12541,7 +12542,7 @@ REQioyQkIiKR+f8BGRS+0ZO7QtkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[86]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">data_dict</span><span class="p">:</span>
@@ -12608,7 +12609,7 @@ REQioyQkIiKR+f8BGRS+0ZO7QtkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[87]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">features_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;poi&#39;</span><span class="p">,</span> <span class="s1">&#39;salary&#39;</span><span class="p">,</span> <span class="s1">&#39;to_messages&#39;</span><span class="p">,</span> <span class="s1">&#39;deferral_payments&#39;</span><span class="p">,</span> 
@@ -12619,7 +12620,8 @@ REQioyQkIiKR+f8BGRS+0ZO7QtkAAAAASUVORK5CYII=
                  <span class="s1">&#39;bonus_ratio&#39;</span><span class="p">,</span><span class="s1">&#39;salary_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;pay_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;pay_stock_ratio&#39;</span><span class="p">,</span> 
                  <span class="s1">&#39;exercised_stock_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;email_to_poi_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;email_from_poi_ratio&#39;</span><span class="p">,</span> <span class="s1">&#39;cc_with_poi_ratio&#39;</span><span class="p">]</span> 
 
-<span class="c1"># total of 28 features. In my evaluation of the algorithms below, I will use SelectKBest to select the best features.</span>
+<span class="c1"># total of 28 features. In my evaluation of the algorithms below, I will use SelectKBest with GridSearchCV to select the best </span>
+<span class="c1"># features.</span>
 
 <span class="c1">### Store to my_dataset for easy export below.</span>
 <span class="n">my_dataset</span> <span class="o">=</span> <span class="n">data_dict</span>
@@ -12638,7 +12640,8 @@ REQioyQkIiKR+f8BGRS+0ZO7QtkAAAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>First, I performed SelectKBest and manually removed features that had a negative score. Then, I experimented with the k parameter in the pipeline and discovered that the optimal number of features is 7. The top 7 features selected from the model are: bonus, salary, bonus_ratio, pay_ratio, shared_receipt_with_poi, total_stock_value, and exercised_stock_options.</p>
+<p>In the parameter tuning section below, it shows an example of how I used SelectKBest along with GridSearchCV to automatically
+select the optimal number of features. I experimented with the k parameter in the pipeline and discovered that the optimal number of features is 7. The top 7 features selected from the model are: bonus, salary, bonus_ratio, pay_ratio, shared_receipt_with_poi, total_stock_value, and exercised_stock_options.</p>
 
 </div>
 </div>
@@ -12654,13 +12657,12 @@ REQioyQkIiKR+f8BGRS+0ZO7QtkAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[88]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">precision_score</span><span class="p">,</span> <span class="n">f1_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span>
-<span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
-<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">cross_validation</span>
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">StratifiedShuffleSplit</span><span class="p">,</span> <span class="n">StratifiedKFold</span><span class="p">,</span> <span class="n">KFold</span><span class="p">,</span> <span class="n">cross_val_score</span>
 <span class="kn">from</span> <span class="nn">sklearn.feature_selection</span> <span class="kn">import</span> <span class="n">SelectKBest</span><span class="p">,</span> <span class="n">f_classif</span>
@@ -12702,7 +12704,7 @@ both features.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[89]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;Performance Comparison Table &quot;</span>
@@ -12742,7 +12744,7 @@ both features.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[47]:</div>
+<div class="prompt output_prompt">Out[89]:</div>
 
 
 
@@ -12829,16 +12831,26 @@ both features.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Validation">Validation<a class="anchor-link" href="#Validation">&#182;</a></h3><p>Validation is evaluating the performance of the model on unseen data. We want to minimize the generalization error, which is the average error for data that we have never seen. A classic mistake that someone can make is evaluating the performance of the algorithm using the same dataset it was trained on. The result will look like the algorithm is performing better than it actually is.</p>
-<p>It is data mining best practice to keep a subset of data to use as test data. You would train the model with training data and examine the performance on predicting the values for the target variable with the test data. Then, you would compare the predicted values from the model with the true values.</p>
+<p>The table shows the performance results after running the models trained with the entire dataset. Some of the models look like they have perfect or near perfect results, but I know that classifiers such as decision tree are prone to overfitting so the results may look too good to be true. I will discuss overfitting more in the next section. Conversely, it appears that support vector machine was not able to identify any POIs. This may be attributed to the fact that the dataset is not particularly large and the number of POIs is rather few.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Validation">Validation<a class="anchor-link" href="#Validation">&#182;</a></h3><p>Validation is evaluating the performance of the model on unseen data. We want to minimize the generalization error, which is the average error for data that we have never seen. A classic mistake that someone can make is evaluating the performance of the algorithm using the same dataset it was trained on. The result will look like the algorithm is performing better than it actually is, as evidenced in the table above. This is called overfitting. It's not as difficult to guess the correct label again once the model has already memorized all of the data and its labels. However, when new, unseen data is introduced, the model will not be able to generalize that data and will not know what to do with it.</p>
+<p>It is data mining best practice to keep a subset of data to use as test data. You would train the model with training data and examine the performance on predicting the unknown values for the target variable with the test data. Then, you would compare the predicted values from the model with the true values. This way, you can use test data to evaluate the model's performance on generalizing new data.</p>
 <p>Cross-validation is another of separating the data into training and test data. I used StratifiedShuffleSplit, which is a variation of k-fold cross-validation. It will shuffle the data, then split the data into training and test sets. This process is repeated more than once (you can choose how many times) and it will average the results across all the tests. There are 18 POIs compared with 128 non-POIs so there is sizable class imbalance. Stratification ensures that training and test splits have a balanced class distribution that represents the overall data.</p>
+<p>In the next table, you can see that the model's performances after splitting the data into training and test data is not as perfect as we thought they were.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># hold out 30% of the data for testing and set the random_state parameter to 42 (random_state controls which points go into the </span>
@@ -12855,7 +12867,7 @@ both features.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;Performance After One Training/Test Split&quot;</span>
@@ -12895,7 +12907,7 @@ both features.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[48]:</div>
+<div class="prompt output_prompt">Out[91]:</div>
 
 
 
@@ -12982,7 +12994,7 @@ both features.</p>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Parameters-Tuning">Parameters Tuning<a class="anchor-link" href="#Parameters-Tuning">&#182;</a></h3><p>Tuning the parameters of an algorithm means customizing and finding the most robust set of parameters to optimize an algorithm’s performance. Algorithms are assigned with default parameters, which may work in some cases, but it might not work the best for the dataset features in question. If you don’t tune your parameters well, then you will not achieve the optimization and full potential of your algorithm, making its prediction outcome less accurate than it could be. You can also make the performance worse than it actually is.</p>
+<h3 id="Parameters-Tuning">Parameters Tuning<a class="anchor-link" href="#Parameters-Tuning">&#182;</a></h3><p>Tuning the parameters of an algorithm means customizing and finding the most robust set of parameters to optimize an algorithm’s performance. Algorithms are assigned with default parameters, which may work in some cases, but it might not work the best for the dataset features in question. If you don’t tune your parameters well, then you will not achieve the optimization and full potential of your algorithm, making its prediction outcome less accurate than it could be. You can also make the performance worse than it actually is. The opposite is true. An algorithm may have poor performance initially, but by trying different parameter values, you may find that the algorithm may work very well when the right set of parameters are used.</p>
 <p>I tuned the parameters using GridSearchCV, which takes in sets of parameters and applies cross-validation to each possible combination of parameters to find the most optimal combination. For my decision tree algorithm, I tuned the <strong>min_samples_split</strong> and found out that 7 minimum sample splits provided the best performance. <strong>Min_samples_split</strong> provides 
 a minimum threshold of observations in an internal node. If there is less than 7 people, then no further splitting can be done.
 I also tuned <strong>max_depth</strong>, which determines when the splitting of decision tree node stops. I want to avoid very deep trees as it performs well on known data (training data), but not as well on unknown data (test data) so it does not generalize well.</p>
@@ -12992,12 +13004,13 @@ I also tuned <strong>max_depth</strong>, which determines when the splitting of 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[92]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">pca</span> <span class="o">=</span> <span class="n">PCA</span><span class="p">()</span>
 <span class="n">skb</span> <span class="o">=</span> <span class="n">SelectKBest</span><span class="p">()</span>
 <span class="n">clf_DT_pca</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="n">target_names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Not POI&quot;</span><span class="p">,</span> <span class="s2">&quot;POI&quot;</span><span class="p">]</span>
 
 <span class="n">pipe</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([(</span><span class="s2">&quot;skb&quot;</span><span class="p">,</span> <span class="n">skb</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;pca&quot;</span><span class="p">,</span><span class="n">pca</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;DT&quot;</span><span class="p">,</span><span class="n">clf_DT_pca</span><span class="p">)])</span>
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;skb__k&quot;</span><span class="p">:[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="s1">&#39;all&#39;</span><span class="p">],</span> <span class="s2">&quot;pca__n_components&quot;</span><span class="p">:</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">),</span> \
@@ -13037,11 +13050,11 @@ I also tuned <strong>max_depth</strong>, which determines when the splitting of 
 
 <span class="n">my_dataset</span> <span class="o">=</span> <span class="n">data_dict</span>
 
-<span class="n">data</span> <span class="o">=</span> <span class="n">featureFormat</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">,</span> <span class="n">best_features_list</span><span class="p">,</span> <span class="n">sort_keys</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
-<span class="n">labels</span><span class="p">,</span> <span class="n">features</span> <span class="o">=</span> <span class="n">targetFeatureSplit</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<span class="n">features_train</span><span class="p">,</span> <span class="n">features_test</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">,</span> <span class="n">labels_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+<span class="n">best_data</span> <span class="o">=</span> <span class="n">featureFormat</span><span class="p">(</span><span class="n">my_dataset</span><span class="p">,</span> <span class="n">best_features_list</span><span class="p">,</span> <span class="n">sort_keys</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">labels</span><span class="p">,</span> <span class="n">best_features</span> <span class="o">=</span> <span class="n">targetFeatureSplit</span><span class="p">(</span><span class="n">best_data</span><span class="p">)</span>
+<span class="n">best_features_train</span><span class="p">,</span> <span class="n">best_features_test</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">,</span> <span class="n">labels_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">best_features</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.3</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 <span class="n">clf_DT_split</span> <span class="o">=</span> <span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">min_samples_split</span><span class="o">=</span><span class="mi">7</span><span class="p">,</span> <span class="n">max_depth</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>  
-<span class="n">clf_DT_split</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">features_train</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">)</span>
+<span class="n">clf_DT_split</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">best_features_train</span><span class="p">,</span> <span class="n">labels_train</span><span class="p">)</span>
 <span class="k">print</span> <span class="n">clf_DT_split</span><span class="o">.</span><span class="n">feature_importances_</span>
 </pre></div>
 
@@ -13060,7 +13073,7 @@ I also tuned <strong>max_depth</strong>, which determines when the splitting of 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>best estimator:  Pipeline(memory=None,
-     steps=[(&#39;skb&#39;, SelectKBest(k=7, score_func=&lt;function f_classif at 0x000000000BFD97B8&gt;)), (&#39;pca&#39;, PCA(copy=True, iterated_power=&#39;auto&#39;, n_components=2, random_state=None,
+     steps=[(&#39;skb&#39;, SelectKBest(k=7, score_func=&lt;function f_classif at 0x000000000BDD8DD8&gt;)), (&#39;pca&#39;, PCA(copy=True, iterated_power=&#39;auto&#39;, n_components=2, random_state=None,
   svd_solver=&#39;randomized&#39;, tol=0.0, whiten=False)), (&#39;DT&#39;, DecisionTreeClassifier(class_weight=None, criterion=&#39;gini&#39;, max_depth=1...      min_weight_fraction_leaf=0.0, presort=False, random_state=None,
             splitter=&#39;best&#39;))])
 best parameters:  {&#39;DT__min_samples_split&#39;: 7, &#39;DT__max_depth&#39;: 10, &#39;pca__svd_solver&#39;: &#39;randomized&#39;, &#39;pca__n_components&#39;: 2, &#39;skb__k&#39;: 7}
@@ -13074,7 +13087,7 @@ f1-score pca: 0.333333333333
 
 avg / total       0.84      0.81      0.83        43
 
-Feature Importances:  [ 0.54639347  0.45360653]
+Feature Importances:  [ 0.52600861  0.47399139]
 [ 0.23764125  0.14041514  0.          0.          0.32442044  0.15309617
   0.144427  ]
 </pre>
@@ -13090,14 +13103,15 @@ Feature Importances:  [ 0.54639347  0.45360653]
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The precision falls under the desired level of 0.30. However, after evaluating the performances for each model using tester.py,
-the Decision Tree model performed the best.</p>
+the Decision Tree model performed the best. Bonus and salary are the top two features with the highest scores. The bonus ratio and pay ratio features that I created are derived from bonus and salary, so naturally they also have high scores. I'm surprised that none of the email features were selected.</p>
+<h3 id="Feature-Selection-Revisited">Feature Selection Revisited<a class="anchor-link" href="#Feature-Selection-Revisited">&#182;</a></h3><p>In the pipeline, SelectKBest selects the top k features with the highest scores and applies it to the data. By combining it with GridSearchCV, different combinations of hyperparameters were tuned to find the best one, including the number of k features. I provided a list of possible choices for number of features (5,7,15, and all) for GridSearchCV to choose from. After trying each one, it found that the top 7 features provided the best performance.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;Final Performance Using tester.py After Cross-Validation and Parameters Tuning&quot;</span>
@@ -13143,7 +13157,7 @@ the Decision Tree model performed the best.</p>
 
 <div class="output_area">
 
-<div class="prompt output_prompt">Out[68]:</div>
+<div class="prompt output_prompt">Out[103]:</div>
 
 
 
